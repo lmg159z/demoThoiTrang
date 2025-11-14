@@ -1,0 +1,209 @@
+/* Header cố định */
+#vnt-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+:target,
+[id] {
+  /* áp dụng khi cuộn tới phần tử có id */
+  scroll-margin-top: 50px;
+}
+/* Đẩy nội dung xuống dưới header */
+#vnt-content {
+    padding-top: 50px; /* tăng nếu header cao hơn 60px */
+}
+
+#vnt-content .menu:nth-child(odd) .caption {
+    float: left;
+}
+
+#vnt-content .menu:nth-child(odd) .imgCat {
+    float: right;
+    text-align: right;
+}
+
+#vnt-content .menu:nth-child(even) .caption {
+    float: right;
+    text-align: right;
+}
+
+#vnt-content .menu:nth-child(even) .imgCat {
+    float: left;
+    text-align: left;
+}
+
+.menu {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 340px;
+    overflow: hidden;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu .caption {
+    width: 50%;
+}
+
+.menu .tend {
+    margin-bottom: 20px;
+}
+
+.menu .tend a {
+    font-size: 45px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-family: 'fontkhachhang';
+    font-weight: normal;
+    color: inherit;
+    display: block;
+}
+
+.menu .tend a:hover {
+    color: #b22830;
+}
+
+.menu .des {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.menu .link a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 70px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+}
+
+.menu .link a:hover {
+    background: #b22830;
+    color: #fff;
+    border-color: #b22830;
+}
+
+.menu .imgWrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.menu .imgCat {
+    width: 50%;
+    pointer-events: auto;
+}
+
+.product .img {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.product .img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.3s linear;
+}
+
+.product .img:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.product .tend {
+    margin-bottom: 10px;
+}
+
+.product .tend a {
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #53382c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-family: 'fontkhachhang';
+}
+
+.product .tend a:hover {
+    color: #f14a50;
+}
+
+.product .des {
+    font-size: 15px;
+    line-height: 23px;
+    max-height: 69px;
+}
+
+#vnt-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+div#vnt-content {
+    min-height: calc(100vh - 180px);
+}
+
+
+.vntheader {
+    background-color: #b2292e;
+}
+
+.tpmenuhead>ul {
+    display: flex;
+    align-items: center;
+}
+
+.tpmenuhead>ul>li {
+    margin-right: 32px;
+}
+
+.tpmenuhead>ul>li:last-child {
+    margin-right: 0;
+}
+
+.tpmenuhead>ul>li>a {
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tpmenuhead>ul>li:hover>a {
+    color: #f1bc7a;
+}
