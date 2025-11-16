@@ -1,372 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin thời trang</title>
-    <link href="./reset.css" rel="stylesheet" type="text/css">
-    <!-- <link href="./index.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link rel="stylesheet" href="./product.css" type="text/css"> -->
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thiết kế - Demo</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <!-- Header -->
-            <div id="vnt-header">
-                <div class="vntheader">
-                    <div class="wrapper">
-                        <div class="tpmenuhead hidden-xs hidden-sm">
-                            <ul>
-                                <li class="m-about"><a href="#">Trang chủ</a></li>
-                                <li class="m-about"><a href="#_scoll-1">Lorem 1</a></li>
-                                <li class="m-about"><a href="#_scoll-2">Lorem 2</a></li>
-                                <li class="m-about"><a href="#_scoll-3">Lorem 3</a></li>
-                                <li class="m-about"><a href="#_scoll-4">Lorem 4</a></li>
-                                <li class="m-about"><a href="#_scoll-5">Lorem 5</a></li>
-                                <li class="m-about"><a href="#_scoll-6">Lorem 6</a></li>
-                                <li class="m-about"><a href="#_scoll-7">Lorem 7</a></li>
-                                <li class="m-about"><a href="#_scoll-8">Lorem 8</a></li>
-                                <li class="m-about"><a href="#_scoll-9">Lorem 9</a></li>
-                            </ul>
+    <header>
+        <div class="container">
+            <div class="brand">
+                <div class="logo" style="background-image: url('https://classic.vn/wp-content/uploads/2022/04/logo-shopee-764x800.png');"></div>
+                <!-- đổi link logo phía trên -->
+                <div style="font-weight:700">Tên cửa hàng</div>
+            </div>
+            <nav aria-label="Chính">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#scoll_1">Sườn xám</a></li>
+                    <li><a href="#scoll_2">Váy dài</a></li>
+                    <li><a href="#scoll_3">Váy ngắn</a></li>
+                    <li><a href="#scoll_4">Váy ngắn</a></li>
+                    <li><a href="#scoll_0">Thông tin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="tc-title">
+            <div class="title">
+                <h2 id="sx-title">Trang chủ <span class="muted"></span></h2>
+            </div>
+            <!-- grid for the remaining items in this row -->
+            <!-- <div style="flex:1">
+          <div class="cards">
+            <!-- produce 8 thêm để tổng 9 khung -->
+            <!-- <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta">
+                <div>
+                  <div class="name">Sườn xám 1</div>
+                  <div class="desc">Mô tả ngắn</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 2</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 3</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 4</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 5</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 6</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 7</div><div class="desc">Mô tả</div></div>
+            </div>
+            <div class="card">
+              <div class="thumb">Ảnh</div>
+              <div class="meta"><div class="name">Sườn xám 8</div><div class="desc">Mô tả</div></div>
+            </div>
+          </div>
+        </div> -->
+            </div>
+        </section>
+
+        <!-- Sườn xám -->
+        <section id="scoll_1" class="section">
+            <div class="title">
+                <h2 id="sx-title">Sườn xám</h2>
+            </div>
+            <div style="flex:1">
+                <div class="cards">
+                    <!-- produce 8 thêm để tổng 9 khung -->
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <!-- Sườn xám -->
+        <section id="scoll_2" class="section">
+            <div class="title">
+                <h2 id="sx-title">Sườn xám</h2>
+            </div>
+            <!-- grid for the remaining items in this row -->
+            <div style="flex:1">
+                <div class="cards">
+                    <!-- produce 8 thêm để tổng 9 khung -->
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <!-- Sườn xám -->
+        <section id="scoll_3" class="section">
+            <div class="title">
+                <h2 id="sx-title">Sườn xám</h2>
+            </div>
+            <!-- grid for the remaining items in this row -->
+            <div style="flex:1">
+                <div class="cards">
+                    <!-- produce 8 thêm để tổng 9 khung -->
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <!-- Sườn xám -->
+        <section id="scoll_4" class="section">
+            <div class="title">
+                <h2 id="sx-title">Sườn xám</h2>
+            </div>
+            <!-- grid for the remaining items in this row -->
+            <div style="flex:1">
+                <div class="cards">
+                    <!-- produce 8 thêm để tổng 9 khung -->
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumb" style="background-image: url('https://www.lavender.com.vn/wp-content/uploads/chup-hinh-thoi-trang-cho-shop-01.jpg');">Ảnh</div>
+                        <div class="meta">
+                            <div>
+                                <div class="name">Sườn xám 1</div>
+                                <div class="desc">Thủ tướng lưu ý cần đẩy mạnh phòng, chống bạo lực học đường, bảo vệ thầy cô giáo và học sinh với tinh thần 'thầy ra thầy, trò ra trò'.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+    </main>
+
+    <footer id="scoll_0" >
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="logo" style="background-image: url('https://classic.vn/wp-content/uploads/2022/04/logo-shopee-764x800.png');"></div>
+                <div class="contact">
+                    <div style="font-weight:700">Hỗ trợ khách hàng</div>
+                    <div>SĐT: 03x 300 xxxx</div>
+                    <div>Email: abc@gmail.com</div>
+                    <div>Địa chỉ: 123 Tân Phú, TP...</div>
                 </div>
             </div>
 
-            <!-- Content -->
-            <div id="vnt-content">
-                <div class="block-category">
-
-
-                    <!-- demo ảnh nằm phí bên phải -->
-                    <div id="_scoll-1" class="menu" style="color:hsl(342, 87%, 46%); border-color:hsl(140, 78%, 49%); background-color:#ce9c4d; background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg)">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:12px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="CÀ PHÊ">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">lorem 1</a></h3>
-                                    <h4><a href="#">300$</a></h4>
-                                </div>
-                                <div class="des lazy-start fadeInUp">
-                                    <span style="font-family:Roboto,sans-serif; color:#faebd7;">
-                                        Thủ tướng Chính phủ yêu cầu Chủ tịch UBND tỉnh Lâm Đồng khẩn trương chỉ đạo các
-                                        cơ quan chức năng điều tra, làm rõ nguyên nhân vụ việc; đồng thời xác định trách
-                                        nhiệm của tổ chức, cá nhân liên quan và xử lý nghiêm các vi phạm (nếu có) theo
-                                        quy định pháp luật.
-                                    </span>
-                                    
-                                </div>
-                                
-                                <div class="link lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7"
-                                    style="animation-delay:0.7s;">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               
-                    <!-- demo ảnh nằm phí bên trái -->
-                    <div id="_scoll-2" class="menu" style="color:#006400; border-color:#006400; background-color:#f0bb7c;">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:-10px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="FREEZE">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">LOREM 2</a></h3>
-                                </div>
-                                <div class="des lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5"
-                                    style="animation-delay:0.5s;">
-                                    <span style="font-family:Roboto,sans-serif; color:#006400;">
-                                        Thủ tướng yêu cầu Bộ Công thương, theo chức năng và nhiệm vụ được giao, chỉ đạo
-                                        cơ quan chuyên môn phối hợp với các đơn vị liên quan kiểm tra điều kiện an toàn
-                                        hóa chất tại Công ty CP HC Bảo Lâm và báo cáo kết quả trước ngày 25.11.2025.
-                                        Đồng thời, chủ trì, phối hợp với các địa phương có liên quan triển khai thực
-                                        hiện rà soát trong phạm vi toàn quốc đối với các cơ sở sản xuất, lưu trữ hóa
-                                        chất nguy hiểm và tăng cường các biện pháp quản lý, bảo đảm an ninh, an toàn hóa
-                                        chất theo quy định
-                                    </span>
-                                </div>
-                                <div class="link lazy-start fadeInUp">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- demo ảnh nằm phí bên phải -->
-                    <div id="_scoll-3" class="menu" style="color:hsl(342, 87%, 46%); border-color:hsl(140, 78%, 49%); background-color:#ce9c4d; background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg)">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:12px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="CÀ PHÊ">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">lorem 1</a></h3>
-                                    <h4><a href="#">300$</a></h4>
-                                </div>
-                                <div class="des lazy-start fadeInUp">
-                                    <span style="font-family:Roboto,sans-serif; color:#faebd7;">
-                                        Thủ tướng Chính phủ yêu cầu Chủ tịch UBND tỉnh Lâm Đồng khẩn trương chỉ đạo các
-                                        cơ quan chức năng điều tra, làm rõ nguyên nhân vụ việc; đồng thời xác định trách
-                                        nhiệm của tổ chức, cá nhân liên quan và xử lý nghiêm các vi phạm (nếu có) theo
-                                        quy định pháp luật.
-                                    </span>
-                                    
-                                </div>
-                                
-                                <div class="link lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7"
-                                    style="animation-delay:0.7s;">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               
-                    <!-- demo ảnh nằm phí bên trái -->
-                    <div id="_scoll-4" class="menu" style="color:#006400; border-color:#006400; background-color:#f0bb7c;">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:-10px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="FREEZE">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">LOREM 2</a></h3>
-                                </div>
-                                <div class="des lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5"
-                                    style="animation-delay:0.5s;">
-                                    <span style="font-family:Roboto,sans-serif; color:#006400;">
-                                        Thủ tướng yêu cầu Bộ Công thương, theo chức năng và nhiệm vụ được giao, chỉ đạo
-                                        cơ quan chuyên môn phối hợp với các đơn vị liên quan kiểm tra điều kiện an toàn
-                                        hóa chất tại Công ty CP HC Bảo Lâm và báo cáo kết quả trước ngày 25.11.2025.
-                                        Đồng thời, chủ trì, phối hợp với các địa phương có liên quan triển khai thực
-                                        hiện rà soát trong phạm vi toàn quốc đối với các cơ sở sản xuất, lưu trữ hóa
-                                        chất nguy hiểm và tăng cường các biện pháp quản lý, bảo đảm an ninh, an toàn hóa
-                                        chất theo quy định
-                                    </span>
-                                </div>
-                                <div class="link lazy-start fadeInUp">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- demo ảnh nằm phí bên phải -->
-                    <div id="_scoll-5" class="menu" style="color:hsl(342, 87%, 46%); border-color:hsl(140, 78%, 49%); background-color:#ce9c4d; background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg)">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:12px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="CÀ PHÊ">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">lorem 1</a></h3>
-                                    <h4><a href="#">300$</a></h4>
-                                </div>
-                                <div class="des lazy-start fadeInUp">
-                                    <span style="font-family:Roboto,sans-serif; color:#faebd7;">
-                                        Thủ tướng Chính phủ yêu cầu Chủ tịch UBND tỉnh Lâm Đồng khẩn trương chỉ đạo các
-                                        cơ quan chức năng điều tra, làm rõ nguyên nhân vụ việc; đồng thời xác định trách
-                                        nhiệm của tổ chức, cá nhân liên quan và xử lý nghiêm các vi phạm (nếu có) theo
-                                        quy định pháp luật.
-                                    </span>
-                                    
-                                </div>
-                                
-                                <div class="link lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7"
-                                    style="animation-delay:0.7s;">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               
-                    <!-- demo ảnh nằm phí bên trái -->
-                    <div id="_scoll-6" class="menu" style="color:#006400; border-color:#006400; background-color:#f0bb7c;">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:-10px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="FREEZE">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">LOREM 2</a></h3>
-                                </div>
-                                <div class="des lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5"
-                                    style="animation-delay:0.5s;">
-                                    <span style="font-family:Roboto,sans-serif; color:#006400;">
-                                        Thủ tướng yêu cầu Bộ Công thương, theo chức năng và nhiệm vụ được giao, chỉ đạo
-                                        cơ quan chuyên môn phối hợp với các đơn vị liên quan kiểm tra điều kiện an toàn
-                                        hóa chất tại Công ty CP HC Bảo Lâm và báo cáo kết quả trước ngày 25.11.2025.
-                                        Đồng thời, chủ trì, phối hợp với các địa phương có liên quan triển khai thực
-                                        hiện rà soát trong phạm vi toàn quốc đối với các cơ sở sản xuất, lưu trữ hóa
-                                        chất nguy hiểm và tăng cường các biện pháp quản lý, bảo đảm an ninh, an toàn hóa
-                                        chất theo quy định
-                                    </span>
-                                </div>
-                                <div class="link lazy-start fadeInUp">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- demo ảnh nằm phí bên phải -->
-                    <div id="_scoll-7" class="menu" style="color:hsl(342, 87%, 46%); border-color:hsl(140, 78%, 49%); background-color:#ce9c4d; background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg)">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:12px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="CÀ PHÊ">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">lorem 1</a></h3>
-                                    <h4><a href="#">300$</a></h4>
-                                </div>
-                                <div class="des lazy-start fadeInUp">
-                                    <span style="font-family:Roboto,sans-serif; color:#faebd7;">
-                                        Thủ tướng Chính phủ yêu cầu Chủ tịch UBND tỉnh Lâm Đồng khẩn trương chỉ đạo các
-                                        cơ quan chức năng điều tra, làm rõ nguyên nhân vụ việc; đồng thời xác định trách
-                                        nhiệm của tổ chức, cá nhân liên quan và xử lý nghiêm các vi phạm (nếu có) theo
-                                        quy định pháp luật.
-                                    </span>
-                                    
-                                </div>
-                                
-                                <div class="link lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7"
-                                    style="animation-delay:0.7s;">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               
-                    <!-- demo ảnh nằm phí bên trái -->
-                    <div id="_scoll-8" class="menu" style="color:#006400; border-color:#006400; background-color:#f0bb7c;">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:-10px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="FREEZE">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">LOREM 2</a></h3>
-                                </div>
-                                <div class="des lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5"
-                                    style="animation-delay:0.5s;">
-                                    <span style="font-family:Roboto,sans-serif; color:#006400;">
-                                        Thủ tướng yêu cầu Bộ Công thương, theo chức năng và nhiệm vụ được giao, chỉ đạo
-                                        cơ quan chuyên môn phối hợp với các đơn vị liên quan kiểm tra điều kiện an toàn
-                                        hóa chất tại Công ty CP HC Bảo Lâm và báo cáo kết quả trước ngày 25.11.2025.
-                                        Đồng thời, chủ trì, phối hợp với các địa phương có liên quan triển khai thực
-                                        hiện rà soát trong phạm vi toàn quốc đối với các cơ sở sản xuất, lưu trữ hóa
-                                        chất nguy hiểm và tăng cường các biện pháp quản lý, bảo đảm an ninh, an toàn hóa
-                                        chất theo quy định
-                                    </span>
-                                </div>
-                                <div class="link lazy-start fadeInUp">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- demo ảnh nằm phí bên phải -->
-                    <div id="_scoll-9" class="menu" style="color:hsl(342, 87%, 46%); border-color:hsl(140, 78%, 49%); background-color:#ce9c4d; background-image: url(https://www.highlandscoffee.com.vn/vnt_upload/product/04_2018/menu-PSD-bg.jpg)">
-                        <div class="imgWrap">
-                            <div class="wrapper">
-                                <div class="imgCat lazy-start fadeIn" style="margin-top:12px;">
-                                    <a href="#">
-                                        <img src="./image/image1.png" alt="CÀ PHÊ">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper">
-                            <div class="caption">
-                                <div class="tend lazy-start fadeInUp">
-                                    <h3><a href="#">lorem 1</a></h3>
-                                    <h4><a href="#">300$</a></h4>
-                                </div>
-                                <div class="des lazy-start fadeInUp">
-                                    <span style="font-family:Roboto,sans-serif; color:#faebd7;">
-                                        Thủ tướng Chính phủ yêu cầu Chủ tịch UBND tỉnh Lâm Đồng khẩn trương chỉ đạo các
-                                        cơ quan chức năng điều tra, làm rõ nguyên nhân vụ việc; đồng thời xác định trách
-                                        nhiệm của tổ chức, cá nhân liên quan và xử lý nghiêm các vi phạm (nếu có) theo
-                                        quy định pháp luật.
-                                    </span>
-                                    
-                                </div>
-                                
-                                <div class="link lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7"
-                                    style="animation-delay:0.7s;">
-                                    <a href="#"><span>Khám phá thêm</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               
-                </div> <!-- end block-category -->
-            </div> <!-- end vnt-content -->
-
-        </div> <!-- end vnt-container -->
+            <div style="min-width:220px; color:#111;">
+                <div style="font-weight:700; margin-bottom:6px">Thông tin</div>
+                <div style="font-size:13px; color:#222">Giờ làm việc: 8:00 - 20:00</div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
